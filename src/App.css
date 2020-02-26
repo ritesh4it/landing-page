@@ -1,38 +1,288 @@
-.App {
+.container-fluid {
+	padding: 0;
+}
+
+.topHeader nav {
+  position: absolute;
+  background: transparent;
+}
+
+.logo {
+  margin-left: 10% !important;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+.control {
+  position: absolute;
+  top: 50%;
+}
+.navbar {
+	position: fixed;
+	width: 100%;
+	background-color: #fff;
+	z-index: 10;
+	border-radius: 0;
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #000;
+}
+
+.bg-color {
+	background-color: #a94442;
+}
+
+.bg-color img {
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+}
+
+.party-time {
+	top: 47%;
+	font-weight: bold;
+	position: absolute;
+	left: 30%;
+	letter-spacing: 0.5px;
+}
+
+.order-now {
+	color: mediumvioletred;
+	border: none;
+	border-radius: 20px;
+	background: orange;
+	padding: 12px 50px;
+	font-size: 16px;
+}
+.eatWrapper ul {
+  list-style: none !important;
+}
+
+.nav>li {
+  padding: 25px;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav>li>a>img {
+	width: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-default .navbar-nav>li>a {
+	color: white !important;
+}
+
+.eatWrapper {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.card {
+	padding: 0;
+}
+
+.card img {
+	width: 100px;
+	height: 100px;
+	vertical-align: text-top;
+	margin: 0 0 20px;
+}
+
+.padd {
+	text-align: center;
+	padding: 10px 0 !important;
+}
+
+.eat li {
+	margin: 35px 0 !important;
+	padding: 15px 0;
+}
+
+.activeFood {
+	background: #fff;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0 0 4px #9a9090;
+}
+
+/*  carouselItem CSS  */
+
+.carouselWrapper {
+	background: orange;
+}
+
+.carouselWrapper>div {
+  padding: 50px;
+} 
+
+.carouselWrapper>.title {
+	font-size: 19px;
+	color: #102131;
+	font-weight: 700;
+	margin: 0
+}
+
+.carouselWrapper>.text {
+	color: #ababb6;
+	font-size: 13px;
+	margin: 10px 0 40px;
+	height: 100px;
+	font-family: Roboto-Regular;
+}
+
+.carouselBox {
+	background: #fff;
+	margin: 0 50px;
+	text-align: center;
+	border-radius: 5px;
+	padding: 50px 38px;
+	box-shadow: 0 0 4px #9a9090;
+}
+
+.carouselBox img {
+	width: auto !important;
+	margin: 0 auto;
+  }
+
+.carouselBox hr {
+	width: 65px;
+	border: 1px solid;
+	color: orange;
+}
+
+ /* ./ carouselItem CSS  */
+
+.shadow {
+	box-shadow: 0 0 4px 0px black !important;
+}
+
+.crouser-img {
+  width: 50px;
+}
+
+.testimonial {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.testimonial h3,
+.eatWrapper h3 {
+	color: red;
+	font-weight: bold;
+}
+
+.testimonial p,
+.eatWrapper p {
+	margin: 15px 0;
+}
+
+.testimonial img,
+.eatWrapper img {
+	width: auto;
+}
+
+.testimonialwrapper {
+	margin-top: 50px;
+}
+.nameTag {
+  font-weight: bold;
+}
+.arrow {
+  display: inline;
+  color: #a94442;
+}
+
+.padd20 {
+  padding: 20px;
+}
+.text-left {
+  text-align: left;
+}
+.text-left img {
+  width: 50px !important;
+}
+
+#tcb-testimonial-carousel {
+	margin-top: 50px;
+}
+
+#tcb-testimonial-carousel a {
+	color: black;
+}
+
+#tcb-testimonial-carousel>.text-brand {
+	color: black;
+}
+
+#tcb-testimonial-carousel>.carousel-indicators .active {
+	background: black;
+}
+
+#tcb-testimonial-carousel>.no-margin {
+	margin: 0;
+}
+
+#tcb-testimonial-carousel>.carousel-indicators li {
+	border: 1px solid #ccc;
+}
+
+#tcb-testimonial-carousel>.carousel-control {
+	color: black;
+	width: 5%;
+}
+
+#tcb-testimonial-carousel>.carousel-control:hover,
+#tcb-testimonial-carousel>.carousel-control:focus {
+	color: black;
+}
+
+#tcb-testimonial-carousel>.item {
+	padding: 15px 40px;
+	background: #f8f8f8;
+}
+
+#tcb-testimonial-carousel>.media-object {
+	margin: auto;
+}
+
+.blockquote {
+	border-left: none !important;
+}
+
+.no-border {
+	border-left: none;
+	padding: 10px 0px;
+}
+
+.box {
+  width: 200px;
+  height: 140px;
+}
+
+@media screen and (max-width: 768px) {
+	#tcb-testimonial-carousel>.media-object {
+		margin-bottom: 15px;
+	}
+	.shadow {
+    box-shadow: none !important;
+    background: #ffaa00;
+    top: 42px;
+    right: 14px;
+    position: absolute;
+  }
+  .box {
+    position: absolute;
+    left: 0;
+    height: 90px;
+    width: 115px;
+  }
+  .navbar-default .navbar-collapse {
+    border-color: transparent;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
